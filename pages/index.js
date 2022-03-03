@@ -1,4 +1,5 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { About } from '../components/About';
 import { Header } from '../components/Header';
 import { Navbar } from '../components/Navbar';
 
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="h-6"></div>
       <Navbar/>
       <Header/>
+      <About/>
     </div>
   )
 }

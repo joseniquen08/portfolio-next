@@ -40,7 +40,7 @@ export const Header = () => {
       </div>
       <div className="flex justify-center lg:justify-end lg:pr-12 w-full">
         <motion.div whileHover="hover" className="relative h-60 w-60 lg:w-72 lg:h-72">
-          <Image src="/images/perfil.jpg" alt="Perfil" layout="fill" className="absolute object-scale-down rounded-2xl h-60 lg:h-72 z-20" />
+          <Image src="/images/perfil.jpg" priority alt="Perfil" layout="fill" className="absolute object-scale-down rounded-2xl h-60 lg:h-72 z-20" />
           <motion.div
             variants={hoverVariants}
             className="border-2 border-blue-600 dark:border-blue-500 absolute w-60 h-60 z-10 hidden lg:block lg:w-72 lg:h-72 rounded-2xl -bottom-[1.15rem] -right-[1.15rem]"></motion.div>
