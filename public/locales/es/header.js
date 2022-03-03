@@ -1,7 +1,7 @@
 const es = {
   hi: "¡Bienvenido!",
   name: "Soy José Ñiquen",
-  junior: "Junior Frontend Developer"
+  junior: "Frontend Developer"
 }
 
 export default es;

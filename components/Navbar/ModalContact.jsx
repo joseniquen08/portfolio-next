@@ -74,7 +74,7 @@ export const ModalContact = ({ theme, contactModalIsOpen, closeContactModal }) =
     <Transition appear show={contactModalIsOpen} as={Fragment} >
       <Dialog
         as="div"
-        className="fixed inset-0 z-50 overflow-y-auto bg-slate-500/50 font-inter"
+        className="fixed inset-0 z-50 overflow-y-auto bg-slate-500/50 font-poppins"
         onClose={closeContactModal}
       >
         <div className="min-h-screen px-2.5 text-center">
@@ -109,7 +109,7 @@ export const ModalContact = ({ theme, contactModalIsOpen, closeContactModal }) =
                 <div className="space-y-4 md:col-span-1 md:space-y-5 md:px-3">
                   <Dialog.Title
                     as="h3"
-                    className="text-2xl font-medium leading-6 text-gray-900 md:text-5xl md:font-semibold dark:text-white"
+                    className="text-2xl font-medium tracking-tight leading-6 text-gray-900 md:text-5xl dark:text-white"
                   >
                     {t.title}
                   </Dialog.Title>

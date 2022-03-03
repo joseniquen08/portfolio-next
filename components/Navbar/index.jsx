@@ -96,7 +96,7 @@ export const Navbar = () => {
                 <MenuBurger toggle={() => toggleOpen()}/>
               </motion.nav>
             </div>
-            <div className="z-10 flex items-center ml-3 sm:ml-2">
+            <div className="z-10 flex items-center px-2 ml-1">
               <Link href="/" onClick={scrollTop} passHref>
                 <a className='relative w-10 h-10 lg:h-12 lg:w-12'>
                   <Image
@@ -118,15 +118,15 @@ export const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            <ul className="top-0 left-0 z-0 flex flex-row items-center justify-center w-full h-full md:space-x-6 lg:space-x-10 text-lg font-semibold dark:font-medium">
+            <ul className="top-0 left-0 z-0 flex flex-row items-center justify-center w-full h-full md:space-x-6 lg:space-x-10 text-xl font-medium dark:font-normal">
               <li>
-                <LinkReactScroll to="about" smooth={true} duration={500} className="cursor-pointer focus:outline-none tracking-wide [text-decoration:underline_2px_rgba(255,255,255,0)] [transition:text-decoration-color_500ms] hover:[text-decoration-color:rgba(90,90,90,1)] dark:hover:[text-decoration-color:rgba(255,255,255,1)] underline-offset-8 hover:underline-offset-8">{t.ul.about_me}</LinkReactScroll>
+                <LinkReactScroll to="about" smooth={true} duration={500} className="cursor-pointer focus:outline-none tracking-tight [text-decoration:underline_2px_rgba(255,255,255,0)] [transition:text-decoration-color_500ms] hover:[text-decoration-color:rgba(90,90,90,1)] dark:hover:[text-decoration-color:rgba(255,255,255,1)] underline-offset-8 hover:underline-offset-8">{t.ul.about_me}</LinkReactScroll>
               </li>
               <li>
-                <LinkReactScroll to="skills" smooth={true} duration={500} className="cursor-pointer focus:outline-none tracking-wide [text-decoration:underline_2px_rgba(255,255,255,0)] [transition:text-decoration-color_500ms] hover:[text-decoration-color:rgba(90,90,90,1)] dark:hover:[text-decoration-color:rgba(255,255,255,1)] underline-offset-8 hover:underline-offset-8">{t.ul.skills}</LinkReactScroll>
+                <LinkReactScroll to="skills" smooth={true} duration={500} className="cursor-pointer focus:outline-none tracking-tight [text-decoration:underline_2px_rgba(255,255,255,0)] [transition:text-decoration-color_500ms] hover:[text-decoration-color:rgba(90,90,90,1)] dark:hover:[text-decoration-color:rgba(255,255,255,1)] underline-offset-8 hover:underline-offset-8">{t.ul.skills}</LinkReactScroll>
               </li>
               <li>
-                <LinkReactScroll to="projects" smooth={true} duration={500} className="cursor-pointer focus:outline-none tracking-wide [text-decoration:underline_2px_rgba(255,255,255,0)] [transition:text-decoration-color_500ms] hover:[text-decoration-color:rgba(90,90,90,1)] dark:hover:[text-decoration-color:rgba(255,255,255,1)] underline-offset-8 hover:underline-offset-8">{t.ul.projects}</LinkReactScroll>
+                <LinkReactScroll to="projects" smooth={true} duration={500} className="cursor-pointer focus:outline-none tracking-tight [text-decoration:underline_2px_rgba(255,255,255,0)] [transition:text-decoration-color_500ms] hover:[text-decoration-color:rgba(90,90,90,1)] dark:hover:[text-decoration-color:rgba(255,255,255,1)] underline-offset-8 hover:underline-offset-8">{t.ul.projects}</LinkReactScroll>
               </li>
             </ul>
           </div>
