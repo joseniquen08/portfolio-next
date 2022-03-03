@@ -14,7 +14,7 @@ export const MenuLanguage = () => {
   }
 
   return (
-    <Menu as="div" className="relative">
+    <Menu as="section" className="relative">
       <motion.div whileTap={{ scale: 0.9 }}>
         <Menu.Button className="flex items-center justify-center py-1.5 lg:py-2 px-2 sm:px-3 font-semibold text-stone-700 dark:text-white lg:text-lg space-x-1 lg:space-x-1.5 focus:outline-none hover:bg-gray-100 dark:hover:bg-white dark:hover:bg-opacity-5 rounded-xl">
           <HiOutlineTranslate className="w-5 h-5 lg:w-6 lg:h-6" />

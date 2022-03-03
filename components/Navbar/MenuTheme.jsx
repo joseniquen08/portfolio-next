@@ -15,7 +15,7 @@ export const MenuTheme = ({ themeSelected, setThemeSelected, changeTheme }) => {
     <>
       {
         typeof window !== 'undefined' ? (
-          <Menu as="div" className="relative sm:pr-1">
+          <Menu as="section" className="sm:mr-1 relative">
             <motion.div whileTap={{ scale: 0.9 }}>
               <Menu.Button className="flex items-center justify-center p-1.5 lg:p-2 text-4xl hover:bg-gray-100 dark:hover:bg-white dark:hover:bg-opacity-5 rounded-xl focus:outline-none">
                 {
