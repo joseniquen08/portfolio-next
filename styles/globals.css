@@ -12,3 +12,16 @@
   border-radius: 10px;
   border: 3px solid #000;
 }
+
+.card:hover .img {
+  background: #0f172a;
+  opacity: 0.35;
+}
+
+.card:hover .alert {
+  display: flex;
+}
+
+.card:hover .footer, .card:hover .links {
+  transform: translateY(0%);
+}
