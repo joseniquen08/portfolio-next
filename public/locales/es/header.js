@@ -1,5 +1,5 @@
 const es = {
-  hi: "¡Bienvenido!",
+  hi: "¡Bienvenid@!",
   name: "Soy José Ñiquen",
   junior: "Frontend Developer"
 }

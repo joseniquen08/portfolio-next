@@ -7,8 +7,8 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { HiCheckCircle, HiOutlineX } from 'react-icons/hi';
 import { SiInstagram, SiLinkedin, SiTelegram, SiWhatsapp } from "react-icons/si";
 import { useTimeoutFn } from 'react-use';
-import en from '../../public/locales/en/modal_contact';
-import es from '../../public/locales/es/modal_contact';
+import en from '../../../public/locales/en/modal_contact';
+import es from '../../../public/locales/es/modal_contact';
 import { ButtonLoading } from './ButtonLoading';
 
 export const ModalContact = ({ theme, contactModalIsOpen, closeContactModal }) => {

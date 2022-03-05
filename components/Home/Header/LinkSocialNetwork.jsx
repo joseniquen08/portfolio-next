@@ -1,10 +1,10 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 export const LinkSocialNetwork = ({ href, children }) => {
   return (
     <motion.div whileHover="hover" className="w-14 h-14 relative group">
       <motion.div
-        className="w-14 h-14 dark:bg-white dark:bg-opacity-5 rounded-xl dark:group-hover:bg-opacity-10"
+        className="w-14 h-14 bg-slate-900 bg-opacity-5 dark:bg-white dark:bg-opacity-5 rounded-xl group-hover:bg-opacity-10"
         transition={{
           ease: 'easeInOut',
           duration: 0.65,

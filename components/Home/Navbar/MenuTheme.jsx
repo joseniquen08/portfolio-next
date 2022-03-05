@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { Fragment, useEffect, useState } from "react";
 import { HiOutlineDesktopComputer, HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
-import en from '../../public/locales/en/navbar';
-import es from '../../public/locales/es/navbar';
+import en from '../../../public/locales/en/navbar';
+import es from '../../../public/locales/es/navbar';
 
 export const MenuTheme = ({ themeSelected, setThemeSelected, themeSystem, changeTheme }) => {
 

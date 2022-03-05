@@ -15,7 +15,7 @@ export const MenuBurger = ({ toggle }) => {
       whileTap={{ scale: 0.85 }}
       className="inline-flex items-center justify-center p-1.5 text-slate-700 dark:text-slate-300 rounded-md hover:bg-gray-200/50 dark:hover:bg-slate-700/50 focus:outline-none"
     >
-      <svg width="21" height="21" viewBox="0 0 22 23" stroke="currentColor" aria-hidden="true" fill="none" className="text-black-pantone-500 dark:text-white">
+      <svg width="21" height="21" viewBox="0 0 22 20" stroke="currentColor" aria-hidden="true" fill="none" className="text-black-pantone-500 dark:text-white">
         <Path
           variants={{
             closed: { d: "M 2 3 L 20 3" },

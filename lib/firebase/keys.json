@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "potfolio-nextjs",
+  "private_key_id": "774c59eda87aff9bef9c48b60ee632edc4523841",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCYJAFimUlPg8uu\na+GarSac2kVzdFcOjMArQO11XhkBS89iLmdHKzF7gDeNP0EZ48aVEqeWwg0RGVSF\nEqF/mcS1FwcGDzBniT0PkzoRdnVYh3wAVVeeI1yeIT3Fw2A9AmVAF/R2Dasy6W8E\nKip8OIF13XCCfRqd90fE3ZRuXhIvxCRvaxdH5GvbX66rd9+lRt1z/dowSmUgPk2k\nBiz0sn6Wmphn/GqjfhMIC7sDq942GMU2UCKE7W51iIOSJ9TqVPfsy5JJDaLRgrLd\nD9IYg93JSjvdUFwaMqGxKZx/BSFmb9uhqcOawP0VAEROaQ/tKOWqAfNBEihKix8K\nYbfgoEa9AgMBAAECggEAFfnZc18V7lToxmyR3XBWbADBWHB9JL5jAbxysGnjrcLA\nFXwDcg3Eq4S1QYNaCX3T0POtXoLwNUCV61TqHA7fkZLeclseUE5MEiRflmcogx2q\n5TdunQqZlcPScu8KRzXB31S2fJjz2jpKzWyzz1awKJDQcCDXB+tQpBinmJug/+IZ\np2u+OjF+to05EJGHruA2A72FwAwDcSDDzZFL93q8sEsXnlXuVjNs/3blPrEOBRiJ\nJwMWEm2xKwc5Y3OQJlUr04x9IINWjVN2Eiwfa9uYyon+Xd1Pvy6TeckcxWwbs2Tm\nA91FBGusaGYRzz44ayozITqRnF0qcL/GWzUly4ps8QKBgQDGYEDc8NCg191hEvmm\n2rsUz9rFXEdqiiwq05uIU1I0HCG7Bn3SQonFGH/KdbYV6DmzeIU8Pbqkvvhne4HP\n2UPCWfV5Tt7qI4MHlV4EODjU0lf816rnx0d+7ldSTiat1YbNDiXMLRqJZoaC7oXy\nEI84ay5Pcke7oh4OEggAg9yoGQKBgQDEVZLPx61fB+RDIsKNUNfUtBrR76Rlr2QJ\naXnJPR+LzJ7O39Y49+nK/2/nerYJeRx2ji1p9ljVnperoGRYAnEjmQVE07cVJdoK\nuUhEdYOvfXZu/+wE9k1L7/QQjGKC4r0uvIgX/wNjjHFkvqhZMlKSzLAAfCruhPea\ndLFclp24RQKBgGmj0GbYBwHgco/DXxcv2/iVR9dZ8N4XfrW/wk+yr0/4uy2xo0dZ\nD6zaAxN54+F+rVuZjrop1T7uQ7I330UkWiUhasuS6Lqe9qQPMuXkWr9a1GhdITIU\nuUoq+m1mGMrxrrt8ETzNuBf7dR48jy/9CYft69d68CBHkOHFUGWV0ufhAoGBAINi\nAGyq4onFbiq/CBIpF0VvgMMb6pdhV0A1JRpVnNagh2VIxMI6pGkDpo7wvwB322Q6\noIlYIPpStoxTONLsT2nS7IOyacHtIowqkQG+4fB9tNNyzy5C5Fb8rAam6wVLVe4A\nm9HzBQGI6hjQvTdzRW6XKvAoJ1KWCFuD22xqHgFBAoGAMldcURxWcG2D8WJv69Gr\nVyzqlyqZhnMpFja9oe51Iq1zgkumwETD68Zu9iqMGtZOaJ93uVgGrMGyFJu68X/4\n1aA9QMJOfDz/60lVd13Vk3SZQl3tBUh6yk7Ks0czMloMKQpr+5+9cYrmNwE5GiMO\nrz4rrlNU11uL8gQwrormaak=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-vu9e2@potfolio-nextjs.iam.gserviceaccount.com",
+  "client_id": "116042849538844995373",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-vu9e2%40potfolio-nextjs.iam.gserviceaccount.com"
+}

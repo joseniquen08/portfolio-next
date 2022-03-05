@@ -1,8 +1,9 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { About } from '../components/About';
-import { Header } from '../components/Header';
-import { Navbar } from '../components/Navbar';
-import { Projects } from '../components/Projects';
+import { About } from '../components/Home/About';
+import { Footer } from '../components/Home/Footer';
+import { Header } from '../components/Home/Header';
+import { Navbar } from '../components/Home/Navbar';
+import { Projects } from '../components/Home/Projects';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header/>
       <About/>
       <Projects/>
+      <Footer/>
     </>
   )
 }

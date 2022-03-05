@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { v4 } from "uuid";
-import en from '../../public/locales/en/projects';
-import es from '../../public/locales/es/projects';
+import en from '../../../public/locales/en/projects';
+import es from '../../../public/locales/es/projects';
 import { CardProject } from "./CardProject";
 
 export const Projects = () => {

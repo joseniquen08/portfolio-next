@@ -1,11 +1,10 @@
 import { AnimatePresence, motion, useCycle } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { Link as LinkReactScroll } from 'react-scroll';
-import en from '../../public/locales/en/navbar';
-import es from '../../public/locales/es/navbar';
+import { animateScroll, Link as LinkReactScroll } from 'react-scroll';
+import en from '../../../public/locales/en/navbar';
+import es from '../../../public/locales/es/navbar';
 import { ButtonContact } from './ButtonContact';
 import { MenuBurger } from './MenuBurger';
 import { MenuLanguage } from './MenuLanguage';
@@ -77,10 +76,11 @@ export const Navbar = () => {
   }
 
   const scrollTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    // window.scrollTo({
+    //   top: 0,
+    //   behavior: 'smooth'
+    // });
+    animateScroll.scrollToTop();
   }
 
   return (
@@ -97,8 +97,8 @@ export const Navbar = () => {
               </motion.nav>
             </div>
             <div className="z-10 flex items-center px-2 ml-1">
-              <Link href="/" onClick={scrollTop} passHref>
-                <a className='relative w-10 h-10 lg:h-12 lg:w-12'>
+              {/* <Link href="/" onClick={scrollTop} passHref> */}
+                <motion.a whileTap={{ scale: 0.9 }} onClick={scrollTop} className='relative w-10 h-10 lg:h-12 lg:w-12 cursor-pointer'>
                   <Image
                     src={`/images/${
                       themeSelected === "dark"
@@ -113,21 +113,42 @@ export const Navbar = () => {
                     layout="fill"
                     className="object-scale-down z-20"
                   />
-                </a>
-              </Link>
+                </motion.a>
+              {/* </Link> */}
             </div>
           </div>
           <div className="hidden md:block">
-            <ul className="top-0 left-0 z-0 flex flex-row items-center justify-center w-full h-full md:space-x-6 lg:space-x-10 text-xl font-medium dark:font-normal">
-              <li>
-                <LinkReactScroll to="about" smooth={true} duration={500} className="cursor-pointer focus:outline-none tracking-tight [text-decoration:underline_2px_rgba(255,255,255,0)] [transition:text-decoration-color_500ms] hover:[text-decoration-color:rgba(90,90,90,1)] dark:hover:[text-decoration-color:rgba(255,255,255,1)] underline-offset-8 hover:underline-offset-8">{t.ul.about_me}</LinkReactScroll>
-              </li>
-              <li>
-                <LinkReactScroll to="skills" smooth={true} duration={500} className="cursor-pointer focus:outline-none tracking-tight [text-decoration:underline_2px_rgba(255,255,255,0)] [transition:text-decoration-color_500ms] hover:[text-decoration-color:rgba(90,90,90,1)] dark:hover:[text-decoration-color:rgba(255,255,255,1)] underline-offset-8 hover:underline-offset-8">{t.ul.skills}</LinkReactScroll>
-              </li>
-              <li>
-                <LinkReactScroll to="projects" smooth={true} duration={500} className="cursor-pointer focus:outline-none tracking-tight [text-decoration:underline_2px_rgba(255,255,255,0)] [transition:text-decoration-color_500ms] hover:[text-decoration-color:rgba(90,90,90,1)] dark:hover:[text-decoration-color:rgba(255,255,255,1)] underline-offset-8 hover:underline-offset-8">{t.ul.projects}</LinkReactScroll>
-              </li>
+            <ul className="top-0 left-0 z-0 flex flex-row items-center justify-center w-full h-full md:space-x-4 lg:space-x-6 text-xl font-medium dark:font-normal">
+              <motion.li whileTap={{ scale: 0.9 }}>
+                <LinkReactScroll
+                  to='about'
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-lg hover:bg-white hover:bg-opacity-5 py-2 px-3 rounded-lg"
+                >
+                  {t.ul.about_me}
+                </LinkReactScroll>
+              </motion.li>
+              <motion.li whileTap={{ scale: 0.9 }}>
+                <LinkReactScroll
+                  to='projects'
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-lg hover:bg-white hover:bg-opacity-5 py-2 px-3 rounded-lg"
+                >
+                  {t.ul.projects}
+                </LinkReactScroll>
+              </motion.li>
+              <motion.li whileTap={{ scale: 0.9 }}>
+                <LinkReactScroll
+                  to='skills'
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-lg hover:bg-white hover:bg-opacity-5 py-2 px-3 rounded-lg"
+                >
+                  {t.ul.skills}
+                </LinkReactScroll>
+              </motion.li>
             </ul>
           </div>
           <div className="flex flex-row items-center space-x-1 sm:space-x-2 lg:space-x-3">
@@ -152,8 +173,8 @@ export const Navbar = () => {
           >
             <div className="px-2.5 sm:px-4 py-3 space-y-1.5">
               <LinkReactScroll onClick={() => toggleOpen()} to="about" smooth={true} duration={500} className="block cursor-pointer rounded-xl focus:bg-gray-300 dark:focus:bg-slate-900 tracking-wide px-3 py-1.5">{t.ul.about_me}</LinkReactScroll>
-              <LinkReactScroll onClick={() => toggleOpen()} to="skills" smooth={true} duration={500} className="block cursor-pointer rounded-xl focus:bg-gray-300 dark:focus:bg-slate-900 tracking-wide px-3 py-1.5">{t.ul.skills}</LinkReactScroll>
               <LinkReactScroll onClick={() => toggleOpen()} to="projects" smooth={true} duration={500} className="block cursor-pointer rounded-xl focus:bg-gray-300 dark:focus:bg-slate-900 tracking-wide px-3 py-1.5">{t.ul.projects}</LinkReactScroll>
+              <LinkReactScroll onClick={() => toggleOpen()} to="skills" smooth={true} duration={500} className="block cursor-pointer rounded-xl focus:bg-gray-300 dark:focus:bg-slate-900 tracking-wide px-3 py-1.5">{t.ul.skills}</LinkReactScroll>
             </div>
           </motion.div>
         </AnimatePresence>

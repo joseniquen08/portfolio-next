@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import en from '../../public/locales/en/about';
-import es from '../../public/locales/es/about';
+import en from '../../../public/locales/en/about';
+import es from '../../../public/locales/es/about';
 
 export const About = () => {
 
@@ -8,7 +8,7 @@ export const About = () => {
   const t = locale === 'en' ? en : es;
 
   return (
-    <div id="about" className="px-4 pt-24 pb-12 mx-auto sm:px-10 max-w-5xl 2xl:max-w-6xl lg:px-16 text-stone-600 dark:text-white">
+    <div id="about" className="px-4 pt-24 pb-0 mx-auto sm:px-10 max-w-5xl 2xl:max-w-6xl lg:px-16 text-stone-600 dark:text-white">
       <div className="flex">
         <div className="space-y-6">
           <div className="space-y-1">

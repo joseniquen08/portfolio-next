@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-import en from '../../public/locales/en/navbar';
-import es from '../../public/locales/es/navbar';
+import en from '../../../public/locales/en/navbar';
+import es from '../../../public/locales/es/navbar';
 
 export const ButtonContact = ({ openContactModal }) => {
 
