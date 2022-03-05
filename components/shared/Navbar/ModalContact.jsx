@@ -51,7 +51,7 @@ export const ModalContact = ({ theme, contactModalIsOpen, closeContactModal }) =
     e.preventDefault();
     setSendLoading(true);
 
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID_EMAIL, process.env.REACT_APP_TEMPLATE_ID_EMAIL, form.current, process.env.REACT_APP_USER_ID_EMAIL)
+    emailjs.sendForm(process.env.SERVICE_ID_EMAIL, process.env.TEMPLATE_ID_EMAIL, form.current, process.env.USER_ID_EMAIL)
     .then((result) => {
       if (result.text === 'OK') {
         setSendLoading(false);
@@ -204,7 +204,7 @@ export const ModalContact = ({ theme, contactModalIsOpen, closeContactModal }) =
                               }
                               <ReCAPTCHA
                                 ref={recaptchaRef}
-                                sitekey="6LcjsgUeAAAAAORinbKDr7fDbi1vkUzqe4zri03Z"
+                                sitekey={process.env.RECAPTCHA_SITE_KEY}
                                 size="normal"
                                 onChange={handleCheck}
                                 onExpired={changeDisabled}

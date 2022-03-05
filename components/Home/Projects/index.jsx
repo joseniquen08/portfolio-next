@@ -1,56 +1,55 @@
 import { useRouter } from "next/router";
-import { v4 } from "uuid";
 import en from '../../../public/locales/en/projects';
 import es from '../../../public/locales/es/projects';
 import { CardProject } from "./CardProject";
 
-export const Projects = () => {
+export const Projects = ({ projects }) => {
 
   const { locale } = useRouter();
   const t = locale === 'en' ? en : es;
 
-  const projects = [
-    {
-      id: v4(),
-      name: "Licius (Social Network)",
-      github: "https://github.com/joseniquen08/licius-react",
-      href: "https://licius-react.vercel.app/",
-      image: "/images/licius_template.png",
-      alert: t.db.progress,
-    },
-    {
-      id: v4(),
-      name: "Edullka (Landing)",
-      github: "https://github.com/edullka/edullka-react",
-      href: "https://edullka.com/",
-      image: "/images/edullka_template.png",
-      alert: "",
-    },
-    {
-      id: v4(),
-      name: "BootcamPe (E-commerce)",
-      github: "https://github.com/joseniquen08/bootcampe_niquen",
-      href: "https://react-coder-988f2.web.app/",
-      image: "/images/bootcampe_template.png",
-      alert: t.db.alert,
-    },
-    {
-      id: v4(),
-      name: "Portfolio",
-      github: "https://github.com/joseniquen08/portfolio-react",
-      href: "https://joseniquen.me/",
-      image: "/images/portfolio_template.png",
-      alert: "",
-    },
-    {
-      id: v4(),
-      name: "Music Player",
-      github: "https://github.com/joseniquen08/music-player-react",
-      href: "https://music-player-react-nine.vercel.app/",
-      image: "/images/music_player_template.png",
-      alert: t.db.message,
-    }
-  ];
+  // const projects = [
+  //   {
+  //     id: v4(),
+  //     name: "Licius (Social Network)",
+  //     github: "https://github.com/joseniquen08/licius-react",
+  //     href: "https://licius-react.vercel.app/",
+  //     image: "/images/licius_template.png",
+  //     alert: t.db.progress,
+  //   },
+  //   {
+  //     id: v4(),
+  //     name: "Edullka (Landing)",
+  //     github: "https://github.com/edullka/edullka-react",
+  //     href: "https://edullka.com/",
+  //     image: "/images/edullka_template.png",
+  //     alert: "",
+  //   },
+  //   {
+  //     id: v4(),
+  //     name: "BootcamPe (E-commerce)",
+  //     github: "https://github.com/joseniquen08/bootcampe_niquen",
+  //     href: "https://react-coder-988f2.web.app/",
+  //     image: "/images/bootcampe_template.png",
+  //     alert: t.db.alert,
+  //   },
+  //   {
+  //     id: v4(),
+  //     name: "Portfolio",
+  //     github: "https://github.com/joseniquen08/portfolio-react",
+  //     href: "https://joseniquen.me/",
+  //     image: "/images/portfolio_template.png",
+  //     alert: "",
+  //   },
+  //   {
+  //     id: v4(),
+  //     name: "Music Player",
+  //     github: "https://github.com/joseniquen08/music-player-react",
+  //     href: "https://music-player-react-nine.vercel.app/",
+  //     image: "/images/music_player_template.png",
+  //     alert: t.db.message,
+  //   }
+  // ];
 
   return (
     <div id="projects" className="px-5 pt-24 pb-12 mx-auto sm:px-8 lg:px-16 max-w-5xl 2xl:max-w-6xl dark:text-white">
@@ -63,14 +62,16 @@ export const Projects = () => {
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
           {
-            projects.map(({id, name, image, href, alert, github}) => (
+            projects.map(({id, title, image, web, description, github}) => (
               <CardProject
                 key={id}
-                name={name}
+                id={id}
+                title={title}
                 image={image}
-                href={href}
-                alert={alert}
+                web={web}
+                description={description}
                 github={github}
+                locale={locale}
               />
             ))
           }

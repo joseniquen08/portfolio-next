@@ -1,10 +1,6 @@
 const es = {
   title: "Proyectos",
-  db: {
-    progress: "En producción",
-    alert: "No es responsivo",
-    message: "Solicitar acceso temporal"
-  }
+  en: false
 }
 
 export default es;

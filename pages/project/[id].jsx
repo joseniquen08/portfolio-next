@@ -1,12 +1,12 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Navbar } from "../../components/Navbar";
+import { Navbar } from "../../components/Project/Navbar";
 
 export default function Project ({ data }) {
   return (
     <>
       <div className="h-6"></div>
       <Navbar/>
-      <p>{data.title}</p>
+      <p className='dark:text-white'>{data.title}</p>
     </>
   )
 }

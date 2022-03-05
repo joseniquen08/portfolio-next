@@ -5,11 +5,11 @@ import { useEffect, useState } from 'react';
 import { animateScroll, Link as LinkReactScroll } from 'react-scroll';
 import en from '../../../public/locales/en/navbar';
 import es from '../../../public/locales/es/navbar';
-import { ButtonContact } from './ButtonContact';
-import { MenuBurger } from './MenuBurger';
-import { MenuLanguage } from './MenuLanguage';
-import { MenuTheme } from './MenuTheme';
-import { ModalContact } from './ModalContact';
+import { ButtonContact } from '../../shared/Navbar/ButtonContact';
+import { MenuBurger } from '../../shared/Navbar/MenuBurger';
+import { MenuLanguage } from '../../shared/Navbar/MenuLanguage';
+import { MenuTheme } from '../../shared/Navbar/MenuTheme';
+import { ModalContact } from '../../shared/Navbar/ModalContact';
 
 export const Navbar = () => {
 
@@ -97,24 +97,22 @@ export const Navbar = () => {
               </motion.nav>
             </div>
             <div className="z-10 flex items-center px-2 ml-1">
-              {/* <Link href="/" onClick={scrollTop} passHref> */}
-                <motion.a whileTap={{ scale: 0.9 }} onClick={scrollTop} className='relative w-10 h-10 lg:h-12 lg:w-12 cursor-pointer'>
-                  <Image
-                    src={`/images/${
-                      themeSelected === "dark"
-                        ? "logo_blanco.png"
-                        : themeSelected === "light"
-                            ? "logo.png"
-                            : themeSystem === "dark"
-                              ? "logo_blanco.png"
-                              : "logo.png"
-                    }`}
-                    alt="Perfil"
-                    layout="fill"
-                    className="object-scale-down z-20"
-                  />
-                </motion.a>
-              {/* </Link> */}
+              <motion.a whileTap={{ scale: 0.9 }} onClick={scrollTop} className='relative w-10 h-10 lg:h-12 lg:w-12 cursor-pointer'>
+                <Image
+                  src={`/images/${
+                    themeSelected === "dark"
+                      ? "logo_blanco.png"
+                      : themeSelected === "light"
+                          ? "logo.png"
+                          : themeSystem === "dark"
+                            ? "logo_blanco.png"
+                            : "logo.png"
+                  }`}
+                  alt="Perfil"
+                  layout="fill"
+                  className="object-scale-down z-20"
+                />
+              </motion.a>
             </div>
           </div>
           <div className="hidden md:block">
