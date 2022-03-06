@@ -39,11 +39,16 @@ export const Navbar = () => {
         setThemeSelected("light");
       }
     }
+    if (window.scrollY > 24) {
+      setShowBg(true);
+    } else {
+      setShowBg(false);
+    }
   }, [themeSelected]);
 
   if (typeof window !== 'undefined') {
     window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 24) {
+      if (window.scrollY > 24) {
         setShowBg(true);
       } else {
         setShowBg(false);
@@ -76,10 +81,6 @@ export const Navbar = () => {
   }
 
   const scrollTop = () => {
-    // window.scrollTo({
-    //   top: 0,
-    //   behavior: 'smooth'
-    // });
     animateScroll.scrollToTop();
   }
 

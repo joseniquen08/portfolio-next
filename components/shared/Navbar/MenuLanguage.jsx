@@ -10,7 +10,7 @@ export const MenuLanguage = () => {
   const { locale } = router;
 
   const changeLng = (e) => {
-    router.push('/', '/', { locale: e });
+    router.push('/', '/', { locale: e, scroll: false });
   }
 
   return (

@@ -5,6 +5,7 @@ import useSWR from 'swr';
 import fetcher from '../../../lib/fetcher';
 
 export const NowPlaying = () => {
+
   const { data } = useSWR('/api/now-playing', fetcher);
 
   return (
