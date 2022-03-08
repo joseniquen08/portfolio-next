@@ -1,10 +1,11 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { About } from '../components/Home/About';
-import { Footer } from '../components/Home/Footer';
 import { Header } from '../components/Home/Header';
 import { Navbar } from '../components/Home/Navbar';
 import { Projects } from '../components/Home/Projects';
 import { Skills } from '../components/Home/Skills';
+import { Footer } from '../components/shared/Footer';
+import { getProjects } from '../lib/projects';
 
 export default function Home({ data }) {
   return (
@@ -22,8 +23,7 @@ export default function Home({ data }) {
 
 export const getStaticProps = async ({ locale }) => {
 
-  const projects = await fetch(`http://localhost:3000/api/projects`);
-  const data = await projects.json();
+  const data = await getProjects();
 
   return {
     props: {

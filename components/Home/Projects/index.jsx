@@ -17,7 +17,7 @@ export const Projects = ({ projects }) => {
           </div>
           <div className="hidden md:block w-8 h-[1px] bg-stone-500 dark:bg-white"></div>
         </div>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 py-4">
           {
             projects.map(({id, title, image, web, description, github}) => (
               <CardProject
