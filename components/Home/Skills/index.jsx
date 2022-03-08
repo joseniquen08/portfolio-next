@@ -17,16 +17,27 @@ export const Skills = () => {
           </div>
           <div className="hidden md:block w-8 h-[1px] bg-stone-500 dark:bg-white"></div>
         </div>
-        <div className="space-y-6">
-          <div className="w-full max-w-3xl mx-auto">
-            <div className="grid grid-cols-3 gap-10 text-sm font-medium tracking-wide sm:text-base lg:text-lg">
-              <LogoSkill name='javascript' y={[5, 20, 5]} rotate={[3, -3, 3]}/>
-              <LogoSkill name='html5' y={[15, 0, 15]} rotate={[3, -3, 3]}/>
-              <LogoSkill name='css3' y={[5, 20, 5]} rotate={[3, -3, 3]}/>
-              <LogoSkill name='java' y={[5, 20, 5]} rotate={[3, -3, 3]}/>
-              <LogoSkill name='python' y={[5, 20, 5]} rotate={[3, -3, 3]}/>
-              <LogoSkill name='php' y={[5, 20, 5]} rotate={[3, -3, 3]}/>
-              <LogoSkill name='reactjs' y={[5, 20, 5]} rotate={[3, -3, 3]}/>
+        <div className="space-y-6 py-5">
+          <div className="w-full">
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10 text-sm font-medium tracking-wide sm:text-base lg:text-lg">
+              <LogoSkill name='javascript' y={[2, 5, 2]} delay='0' rotate={[1.5, -1.5, 1.5]}/>
+              <LogoSkill name='html5' y={[5, 2, 5]} delay='0.9' rotate={[-1.5, 1.5, -1.5]}/>
+              <LogoSkill name='css3' y={[2, 5, 2]} delay='0.6' rotate={[1.5, -1.5, 1.5]}/>
+              {/* <LogoSkill name='java' y={[5, 2, 5]} delay='1.2' rotate={[-1.5, 1.5, -1.5]}/> */}
+              {/* <LogoSkill name='python' y={[2, 5, 2]} delay='0.7' rotate={[1.5, -1.5, 1.5]}/> */}
+              {/* <LogoSkill name='php' y={[5, 2, 5]} delay='0.3' rotate={[-1.5, 1.5, -1.5]}/> */}
+              <LogoSkill name='reactjs' y={[2, 5, 2]} delay='0.5' rotate={[1.5, -1.5, 1.5]}/>
+              <LogoSkill name='nextjs' y={[5, 2, 5]} delay='1' rotate={[-1.5, 1.5, -1.5]}/>
+              <LogoSkill name='tailwindcss' y={[2, 5, 2]} delay='0.4' rotate={[1.5, -1.5, 1.5]}/>
+              {/* <LogoSkill name='spring' y={[5, 2, 5]} delay='0' rotate={[-1.5, 1.5, -1.5]}/> */}
+              {/* <LogoSkill name='codeigniter' y={[2, 5, 2]} delay='0.8' rotate={[1.5, -1.5, 1.5]}/> */}
+              <LogoSkill name='mongodb' y={[2, 5, 2]} delay='0.7' rotate={[1.5, -1.5, 1.5]}/>
+              <LogoSkill name='mysql' y={[5, 2, 5]} delay='0.6' rotate={[-1.5, 1.5, -1.5]}/>
+              <LogoSkill name='firebase' y={[2, 5, 2]} delay='0.3' rotate={[1.5, -1.5, 1.5]}/>
+              <LogoSkill name='vscode' y={[5, 2, 5]} delay='0.5' rotate={[-1.5, 1.5, -1.5]}/>
+              {/* <LogoSkill name='intellijidea' y={[2, 5, 2]} delay='0.15' rotate={[1.5, -1.5, 1.5]}/> */}
+              <LogoSkill name='photoshop' y={[5, 2, 5]} delay='0.8' rotate={[-1.5, 1.5, -1.5]}/>
+              <LogoSkill name='illustrator' y={[2, 5, 2]} delay='0.7' rotate={[1.5, -1.5, 1.5]}/>
             </div>
           </div>
         </div>
