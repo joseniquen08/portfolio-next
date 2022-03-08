@@ -24,7 +24,7 @@ const transitionVariants = {
     transition: {
       type: "spring",
       bounce: 0.2,
-      duration: 2
+      duration: 1
     }
   }
 }

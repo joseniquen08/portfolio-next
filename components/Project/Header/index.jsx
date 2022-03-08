@@ -1,4 +1,13 @@
+import { useRouter } from 'next/router';
+
 export const Header = ({ title }) => {
+
+  const router = useRouter();
+  const { locale } = router;
+  // const t = locale === 'en' ? en : es;
+
+  console.log(router.pathname);
+
   return (
     <div className="flex flex-col-reverse space-y-reverse space-y-4 lg:space-y-0 lg:flex-row w-full px-2 lg:px-16 py-10 mx-auto max-w-5xl 2xl:max-w-6xl">
       <div className="flex flex-col justify-center flex-none space-y-10">
