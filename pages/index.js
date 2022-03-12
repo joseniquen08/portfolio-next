@@ -21,7 +21,7 @@ export default function Home({ data }) {
   )
 }
 
-export const getStaticProps = async ({ locale }) => {
+export const getServerSideProps = async ({ locale }) => {
 
   const data = await getProjects();
 
