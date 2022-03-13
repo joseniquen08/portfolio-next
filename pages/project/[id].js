@@ -1,9 +1,9 @@
+import axios from 'axios';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import { Header } from '../../components/Project/Header';
 import { Navbar } from "../../components/Project/Navbar";
 import { Footer } from '../../components/shared/Footer';
-import { getProjectById } from '../../lib/projects';
 
 export default function Project ({ data }) {
   return (
@@ -24,7 +24,8 @@ export default function Project ({ data }) {
 export const getServerSideProps = async ({ locale, params }) => {
 
   const { id } = params;
-  const data = await getProjectById(id);
+  const data = await axios.get(`http://localhost:3000/api/projects/${id}`)
+  .then(response => response.data);
 
   return {
     props: {
