@@ -1,6 +1,6 @@
 import { firestore } from '../../../lib/firebase/admin';
 
-export default async function getProjects (_req, res) {
+export default async function handler (_req, res) {
   let projects = [];
   const data = await firestore.collection('projects').get();
 
