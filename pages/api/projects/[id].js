@@ -6,7 +6,7 @@ const getProjectById = (req, res) => {
 
   firestore.collection('projects').doc(id).get()
     .then(doc => {
-      res.json(doc.data());
+      res.status(200).json(doc.data());
     })
     .catch(() => {
       res.status(404).end();
