@@ -7,7 +7,7 @@ const getProjects = (_req, res) => {
       data.forEach(project => {
         projects.push({ id: project.id, ...project.data()});
       });
-      res.status(200).json(projects);
+      res.status(200).json({ projects });
     })
     .catch(() => {
       res.status(404).end();

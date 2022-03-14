@@ -24,7 +24,7 @@ export const Projects = () => {
           data? (
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 py-4">
               {
-                data.map(({id, title, image, web, description, github}) => (
+                data.projects.map(({id, title, image, web, description, github}) => (
                   <CardProject
                     key={id}
                     id={id}
