@@ -9,7 +9,7 @@ export const Projects = () => {
 
   const { locale } = useRouter();
   const t = locale === 'en' ? en : es;
-  const { data } = useSWR('/api/projects', fetcher)
+  const { data } = useSWR('/api/projects', fetcher);
 
   return (
     <div id="projects" className="px-5 pt-24 mx-auto sm:px-8 lg:px-16 max-w-5xl 2xl:max-w-6xl dark:text-white">
@@ -21,7 +21,7 @@ export const Projects = () => {
           <div className="hidden md:block w-8 h-[1px] bg-stone-500 dark:bg-white"></div>
         </div>
         {
-          data? (
+          data ? (
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 py-4">
               {
                 data.projects.map(({id, title, image, web, description, github}) => (

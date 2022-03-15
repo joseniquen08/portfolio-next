@@ -15,7 +15,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'inter': ['"Inter"', 'sans-serif'],
-        'poppins': ['"Poppins"', 'sans-serif'],
+        'poppins': ["Poppins", defaultTheme.fontFamily.sans],
         'montserrat': ['"Montserrat"', 'sans-serif'],
       },
       height: {
