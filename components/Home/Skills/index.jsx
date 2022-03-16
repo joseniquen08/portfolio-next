@@ -34,7 +34,7 @@ export const Skills = () => {
                 whileInView="onscreen"
                 viewport={{ once: true, amount: 0.8 }}
                 variants={transitionScreenVariants(0.1)}
-                className="dark:bg-white dark:bg-opacity-5 px-5 py-6 rounded-lg space-y-4"
+                className="bg-stone-500 bg-opacity-5 dark:bg-white dark:bg-opacity-5 px-5 py-6 rounded-lg space-y-4"
               >
                 <div className="w-full flex">
                   <p className="text-xl lg:text-lg flex-none font-semibold cursor-default">{t.types.languages}</p>
@@ -50,7 +50,7 @@ export const Skills = () => {
                 whileInView="onscreen"
                 viewport={{ once: true, amount: 0.8 }}
                 variants={transitionScreenVariants(0.2)}
-                className="dark:bg-white dark:bg-opacity-5 px-5 py-6 rounded-lg space-y-4"
+                className="bg-stone-500 bg-opacity-5 dark:bg-white dark:bg-opacity-5 px-5 py-6 rounded-lg space-y-4"
               >
                 <div className="w-full flex">
                   <p className="text-xl lg:text-lg flex-none font-semibold cursor-default">{t.types.lib_and_fram}</p>
@@ -66,7 +66,7 @@ export const Skills = () => {
                 whileInView="onscreen"
                 viewport={{ once: true, amount: 0.8 }}
                 variants={transitionScreenVariants(0.3)}
-                className="dark:bg-white dark:bg-opacity-5 px-5 py-6 rounded-lg space-y-4"
+                className="bg-stone-500 bg-opacity-5 dark:bg-white dark:bg-opacity-5 px-5 py-6 rounded-lg space-y-4"
               >
                 <div className="w-full flex">
                   <p className="text-xl lg:text-lg flex-none font-semibold cursor-default">{t.types.tools}</p>

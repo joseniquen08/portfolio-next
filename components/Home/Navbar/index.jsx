@@ -123,7 +123,7 @@ export const Navbar = () => {
                   to='about'
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-lg hover:bg-white hover:bg-opacity-5 py-2 px-3 rounded-lg"
+                  className="cursor-pointer text-lg hover:bg-gray-100 dark:hover:bg-white dark:hover:bg-opacity-5 py-2 px-3 rounded-lg"
                 >
                   {t.ul.about_me}
                 </LinkReactScroll>
@@ -133,7 +133,7 @@ export const Navbar = () => {
                   to='projects'
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-lg hover:bg-white hover:bg-opacity-5 py-2 px-3 rounded-lg"
+                  className="cursor-pointer text-lg hover:bg-gray-100 dark:hover:bg-white dark:hover:bg-opacity-5 py-2 px-3 rounded-lg"
                 >
                   {t.ul.projects}
                 </LinkReactScroll>
@@ -143,7 +143,7 @@ export const Navbar = () => {
                   to='skills'
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-lg hover:bg-white hover:bg-opacity-5 py-2 px-3 rounded-lg"
+                  className="cursor-pointer text-lg hover:bg-gray-100 dark:hover:bg-white dark:hover:bg-opacity-5 py-2 px-3 rounded-lg"
                 >
                   {t.ul.skills}
                 </LinkReactScroll>
