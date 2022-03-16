@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import en from '../../../public/locales/en/skills';
 import es from '../../../public/locales/es/skills';
-import { LogoSkill } from './LogoSkill';
+import { LogoSkill } from "./LogoSkill";
 
 export const Skills = () => {
 
@@ -19,25 +19,40 @@ export const Skills = () => {
         </div>
         <div className="space-y-6 py-5">
           <div className="w-full">
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10 text-sm font-medium tracking-wide sm:text-base lg:text-lg">
-              <LogoSkill name='javascript' y={[2, 5, 2]} delay='0' rotate={[1.5, -1.5, 1.5]}/>
-              <LogoSkill name='html5' y={[5, 2, 5]} delay='0.9' rotate={[-1.5, 1.5, -1.5]}/>
-              <LogoSkill name='css3' y={[2, 5, 2]} delay='0.6' rotate={[1.5, -1.5, 1.5]}/>
-              {/* <LogoSkill name='java' y={[5, 2, 5]} delay='1.2' rotate={[-1.5, 1.5, -1.5]}/> */}
-              {/* <LogoSkill name='python' y={[2, 5, 2]} delay='0.7' rotate={[1.5, -1.5, 1.5]}/> */}
-              {/* <LogoSkill name='php' y={[5, 2, 5]} delay='0.3' rotate={[-1.5, 1.5, -1.5]}/> */}
-              <LogoSkill name='reactjs' y={[2, 5, 2]} delay='0.5' rotate={[1.5, -1.5, 1.5]}/>
-              <LogoSkill name='nextjs' y={[5, 2, 5]} delay='1' rotate={[-1.5, 1.5, -1.5]}/>
-              <LogoSkill name='tailwindcss' y={[2, 5, 2]} delay='0.4' rotate={[1.5, -1.5, 1.5]}/>
-              {/* <LogoSkill name='spring' y={[5, 2, 5]} delay='0' rotate={[-1.5, 1.5, -1.5]}/> */}
-              {/* <LogoSkill name='codeigniter' y={[2, 5, 2]} delay='0.8' rotate={[1.5, -1.5, 1.5]}/> */}
-              <LogoSkill name='mongodb' y={[2, 5, 2]} delay='0.7' rotate={[1.5, -1.5, 1.5]}/>
-              <LogoSkill name='mysql' y={[5, 2, 5]} delay='0.6' rotate={[-1.5, 1.5, -1.5]}/>
-              <LogoSkill name='firebase' y={[2, 5, 2]} delay='0.3' rotate={[1.5, -1.5, 1.5]}/>
-              <LogoSkill name='vscode' y={[5, 2, 5]} delay='0.5' rotate={[-1.5, 1.5, -1.5]}/>
-              {/* <LogoSkill name='intellijidea' y={[2, 5, 2]} delay='0.15' rotate={[1.5, -1.5, 1.5]}/> */}
-              <LogoSkill name='photoshop' y={[5, 2, 5]} delay='0.8' rotate={[-1.5, 1.5, -1.5]}/>
-              <LogoSkill name='illustrator' y={[2, 5, 2]} delay='0.7' rotate={[1.5, -1.5, 1.5]}/>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-sm font-medium tracking-wide sm:text-base lg:text-lg">
+              <div className="dark:bg-white dark:bg-opacity-5 px-5 py-6 rounded-lg space-y-3">
+                <p className="text-xl font-semibold">Languages</p>
+                <div className="space-y-2">
+                  <LogoSkill image='javascript' name='JavaScript'/>
+                  <LogoSkill image='html5' name='HTML5'/>
+                  <LogoSkill image='css3' name='CSS3'/>
+                  <LogoSkill image='java' name='Java'/>
+                  <LogoSkill image='python' name='Python'/>
+                  <LogoSkill image='php' name='PHP'/>
+                </div>
+              </div>
+              <div className="dark:bg-white dark:bg-opacity-5 px-5 py-6 rounded-lg space-y-3">
+                <p className="text-xl font-semibold">Libraries & Frameworks</p>
+                <div className="space-y-2">
+                  <LogoSkill image='reactjs' name='React'/>
+                  <LogoSkill image='nextjs' name='Nextjs'/>
+                  <LogoSkill image='tailwindcss' name='Tailwind CSS'/>
+                  <LogoSkill image='spring' name='Spring'/>
+                  <LogoSkill image='codeigniter' name='CodeIgniter'/>
+                </div>
+              </div>
+              <div className="dark:bg-white dark:bg-opacity-5 px-5 py-6 rounded-lg space-y-3">
+                <p className="text-xl font-semibold">Tools</p>
+                <div className="space-y-2">
+                  <LogoSkill image='mongodb' name='MongoDB'/>
+                  <LogoSkill image='mysql' name='MySQL'/>
+                  <LogoSkill image='firebase'  name='Firebase'/>
+                  <LogoSkill image='vscode' name='VSCode'/>
+                  <LogoSkill image='intellijidea' name='IntellijIdea'/>
+                  <LogoSkill image='photoshop' name='Photoshop'/>
+                  <LogoSkill image='illustrator' name='Illustrator'/>
+                </div>
+              </div>
             </div>
           </div>
         </div>
