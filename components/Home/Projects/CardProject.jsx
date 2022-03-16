@@ -1,35 +1,17 @@
 import { motion } from "framer-motion";
 import Image from 'next/image';
-import Link from "next/link";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 import { SiGithub } from "react-icons/si";
-
-const hoverVariants = {
-  "hover": {
-    x: 18,
-    y: 18,
-    scale: 1.03,
-    transition: {
-      duration: 0.4
-    }
-  }
-}
-
-const transitionVariants = {
-  offscreen: {
-    opacity: 0
-  },
-  onscreen: {
-    opacity: 1,
-    transition: {
-      duration: 1.2
-    }
-  }
-}
+import { transitionScreenVariants } from "../../../utils/variants";
 
 export const CardProject = ({ id, image, title, description, web, github, locale }) => {
   return (
-    <Link
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
+    {/* <Link
       href={`project/${id}`}
       passHref
     >
@@ -37,10 +19,9 @@ export const CardProject = ({ id, image, title, description, web, github, locale
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}
-        whileHover="hover"
-      >
-        <motion.div className="relative" variants={transitionVariants}>
-          <motion.div whileHover={{ scale: 1.03, transition: { duration: 0.4 } }} className="relative z-20 overflow-hidden cursor-pointer card rounded-xl h-full bg-slate-700">
+      > */}
+        <motion.div className="relative" variants={transitionScreenVariants()}>
+          <div className="relative z-20 overflow-hidden cursor-pointer card rounded-xl h-full bg-slate-700">
             <div className="h-60 xs:h-80 md:h-52 lg:h-64 2xl:h-72 relative">
               <Image src={image} alt="image_random" layout="fill" priority className="object-cover object-center w-full z-0 img opacity-40 md:opacity-100"/>
             </div>
@@ -54,12 +35,10 @@ export const CardProject = ({ id, image, title, description, web, github, locale
             <a href={github} target="_blank" rel="noreferrer"className="absolute p-2 text-white links sm:duration-500 sm:-translate-y-20 top-4 left-5 bg-slate-900/40 hover:bg-slate-900/60 rounded-xl">
               <SiGithub className="w-6 h-6" />
             </a>
-          </motion.div>
-          <motion.div
-            variants={hoverVariants}
-            className="border-2 border-blue-600 dark:border-blue-500 absolute inset-1 z-10 hidden lg:block rounded-2xl"></motion.div>
+          </div>
         </motion.div>
-      </motion.a>
-    </Link>
+    {/*   </motion.a>
+    </Link> */}
+    </motion.div>
   );
 };
