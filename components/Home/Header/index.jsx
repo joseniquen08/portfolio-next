@@ -32,10 +32,10 @@ export const Header = () => {
           <LinkSocialNetwork href="https://github.com/joseniquen08">
             <SiGithub className="h-7 w-7"/>
           </LinkSocialNetwork>
-          <LinkSocialNetwork href="https://github.com/joseniquen08">
+          <LinkSocialNetwork href="https://www.linkedin.com/in/jose-niquen">
             <SiLinkedin className="h-7 w-7"/>
           </LinkSocialNetwork>
-          <LinkSocialNetwork href="https://github.com/joseniquen08">
+          <LinkSocialNetwork href="https://www.instagram.com/jose.niquen">
             <SiInstagram className="h-7 w-7"/>
           </LinkSocialNetwork>
         </div>
