@@ -1,6 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
-import { Header } from '../../components/Project/Header';
+import { ProjectComponent } from '../../components/Project';
 import { Navbar } from "../../components/Project/Navbar";
 import { Footer } from '../../components/shared/Footer';
 
@@ -14,7 +14,7 @@ export default function Project ({ id }) {
       </Head>
       <div className="h-6"></div>
       <Navbar/>
-      <Header id={id}/>
+      <ProjectComponent id={id}/>
       <Footer/>
     </>
   )
