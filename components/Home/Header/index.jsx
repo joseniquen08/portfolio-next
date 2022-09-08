@@ -40,7 +40,7 @@ export const Header = () => {
           </LinkSocialNetwork>
         </div>
       </div>
-      <div className="flex justify-center lg:justify-end lg:pr-12 w-full">
+      <div className="flex justify-center lg:justify-end w-full">
         <div className="space-y-6 lg:space-y-0">
           <div className="w-60 lg:w-72">
             <motion.div whileHover="hover" className="relative h-60 w-60 lg:w-72 lg:h-72">

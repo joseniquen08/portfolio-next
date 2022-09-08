@@ -35,10 +35,10 @@ export const About = () => {
             variants={transitionScreenVariants()}
             className="space-y-6 leading-7 md:leading-8 text-lg md:text-lg font-normal"
           >
-            <p className="text-center md:text-left">
+            <p className="text-center md:text-justify">
               {t.about_me}
             </p>
-            <p className="text-center md:text-left">
+            <p className="text-center md:text-justify">
               {t.hobbies}
             </p>
           </motion.div>

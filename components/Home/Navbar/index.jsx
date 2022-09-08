@@ -86,8 +86,8 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className={`dark:text-white text-gray-700 mt-1 z-40 sticky top-0 w-full bg-white bg-gradient-to-r from-gray-50 to-gray-50/95 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-900/95 ${showBg ? 'border-b shadow-lg shadow-gray-200/50 dark:shadow-slate-900/50' : ''}`}>
-        <div className="relative flex flex-row items-center justify-between px-3 py-3 lg:py-2 sm:px-4 lg:px-16">
+      <nav className={`dark:text-white text-gray-700 mt-1 z-40 sticky top-0 w-full bg-white bg-gradient-to-r from-gray-50 to-gray-50/95 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-900/95 ${showBg ? 'dark:border-b border-b-slate-700 shadow-lg shadow-gray-200/50 dark:shadow-slate-900/50' : ''}`}>
+        <div className="relative flex flex-row items-center justify-between px-3 py-3 lg:py-2 sm:px-4 lg:px-16 mx-auto max-w-5xl 2xl:max-w-6xl">
           <div className="flex items-center">
             <div className="flex items-center md:hidden">
               <motion.nav
@@ -97,7 +97,7 @@ export const Navbar = () => {
                 <MenuBurger toggle={() => toggleOpen()}/>
               </motion.nav>
             </div>
-            <div className="z-10 flex items-center px-2 ml-1">
+            <div className="z-10 flex items-center px-2 ml-1 lg:px-0 lg:m-0">
               <motion.a whileTap={{ scale: 0.9 }} onClick={scrollTop} className='relative w-10 h-10 lg:h-12 lg:w-12 cursor-pointer'>
                 <Image
                   src={`/images/${
@@ -117,7 +117,7 @@ export const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            <ul className="top-0 left-0 z-0 flex flex-row items-center justify-center w-full h-full md:space-x-4 lg:space-x-6 text-xl font-medium dark:font-normal">
+            <ul className="top-0 left-0 z-0 flex flex-row items-center justify-center w-full h-full md:space-x-2 lg:space-x-4 text-xl font-medium dark:font-normal">
               <motion.li whileTap={{ scale: 0.9 }}>
                 <LinkReactScroll
                   to='about'
