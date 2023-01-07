@@ -8,7 +8,7 @@ import { LinkSocialNetwork } from "./LinkSocialNetwork";
 import { NowPlaying } from "./NowPlaying";
 
 const hoverVariants = {
-  "hover": { x: 16, y: 16,  }
+  "hover": { scale: 1.07 }
 }
 
 export const Header = () => {
@@ -17,18 +17,18 @@ export const Header = () => {
   const t = locale === 'en' ? en : es;
 
   return (
-    <div className="flex flex-col-reverse space-y-reverse space-y-4 lg:space-y-0 lg:flex-row w-full px-2 lg:px-16 pt-12 lg:pt-28 lg:pb-16 mx-auto max-w-5xl 2xl:max-w-6xl">
+    <div className="flex flex-col-reverse w-full max-w-5xl px-2 pt-12 mx-auto space-y-4 space-y-reverse lg:space-y-0 lg:flex-row lg:px-16 lg:pt-28 lg:pb-16 2xl:max-w-6xl">
       <div className="flex flex-col justify-center flex-none space-y-10">
         <div className="flex flex-col justify-center space-y-1 lg:space-y-2.5 text-center lg:text-left">
-          <p className="text-3xl lg:text-4xl font-semibold dark:text-white text-stone-700">{t.hi}</p>
+          <p className="text-3xl font-semibold lg:text-4xl dark:text-white text-stone-700">{t.hi}</p>
           <p
-            className="text-5xl lg:text-6xl break-words tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600 font-bold py-1"
+            className="py-1 text-5xl font-bold tracking-tighter text-transparent break-words lg:text-6xl bg-clip-text bg-gradient-to-r from-blue-600 to-green-600"
           >
             {t.name}
           </p>
-          <p className="text-3xl break-words tracking-tight lg:text-4xl font-semibold text-stone-500 dark:text-white">{t.junior}</p>
+          <p className="text-3xl font-semibold tracking-tight break-words lg:text-4xl text-stone-500 dark:text-white">{t.junior}</p>
         </div>
-        <div className="flex pl-1 justify-center lg:justify-start space-x-5 text-lg dark:text-white text-slate-900">
+        <div className="flex justify-center pl-1 space-x-5 text-lg lg:justify-start dark:text-white text-slate-900">
           <LinkSocialNetwork href="https://github.com/joseniquen08">
             <SiGithub className="h-7 w-7"/>
           </LinkSocialNetwork>
@@ -40,19 +40,23 @@ export const Header = () => {
           </LinkSocialNetwork>
         </div>
       </div>
-      <div className="flex justify-center lg:justify-end w-full">
+      <div className="flex justify-center w-full lg:justify-end">
         <div className="space-y-6 lg:space-y-0">
           <div className="w-60 lg:w-72">
             <motion.div whileHover="hover" className="relative h-60 w-60 lg:w-72 lg:h-72">
-              <Image src="/images/perfil.jpg" priority alt="Perfil" layout="fill" className="absolute object-scale-down saturate-200 rounded-2xl z-20"/>
+              <Image src="/images/perfil.png" priority alt="Perfil" layout="fill" className="absolute z-20 rounded-full saturate-150"/>
               <motion.div
                 animate={{ scale: 0.98 }}
-                variants={hoverVariants}
-                className="border-2 border-blue-600 dark:border-blue-500 absolute w-60 h-60 z-10 hidden lg:block lg:w-72 lg:h-72 rounded-2xl -bottom-0 -right-0 scale-90"></motion.div>
+                variants={{ "hover": { scale: 1.05 } }}
+                className="absolute z-10 hidden scale-90 border-2 border-[#00FF96] rounded-full w-60 h-60 lg:block lg:w-72 lg:h-72 -bottom-0 -right-0"></motion.div>
+              <motion.div
+                animate={{ scale: 0.98 }}
+                variants={{ "hover": { scale: 1.1 } }}
+                className="absolute z-10 hidden scale-90 border-2 border-[#00A1FF] rounded-full w-60 h-60 lg:block lg:w-72 lg:h-72 -bottom-0 -right-0"></motion.div>
             </motion.div>
           </div>
           <div className="relative w-60 lg:w-72">
-            <div className="lg:absolute lg:top-9 w-full">
+            <div className="w-full lg:absolute lg:top-9">
               <NowPlaying/>
             </div>
           </div>
